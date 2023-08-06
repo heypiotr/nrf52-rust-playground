@@ -9,7 +9,7 @@
       "preLaunchTask": "Cargo Build (debug)",
       "executable": "./target/thumbv7em-none-eabi/debug/nrf52-rust-playground",
       "device": "nRF52840_xxAA",
-      "svdPath": "${workspaceRoot}/.vscode/nrf52840.svd",
+      "svdPath": "${workspaceRoot}/nrf52840-pac/nrf52840.svd",
       "servertype": "jlink",
       "gdbPath": "gdb-multiarch",
       "objdumpPath": "objdump",
