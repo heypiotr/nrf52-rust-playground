@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug",
+      "type": "cortex-debug",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "preLaunchTask": "Cargo Build (debug)",
+      "executable": "./target/thumbv7em-none-eabi/debug/nrf52-rust-playground",
+      "device": "nRF52840_xxAA",
+      "svdPath": "${workspaceRoot}/.vscode/nrf52840.svd",
+      "servertype": "jlink",
+      "gdbPath": "gdb-multiarch",
+      "objdumpPath": "objdump",
+      "preLaunchCommands": [
+        "monitor semihosting enable",
+        "monitor semihosting IOClient 2"
+      ]
+    }
+  ]
+}
