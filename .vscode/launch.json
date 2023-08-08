@@ -16,7 +16,11 @@
       "preLaunchCommands": [
         "monitor semihosting enable",
         "monitor semihosting IOClient 2"
-      ]
+      ],
+      "rttConfig": {
+        "enabled": true,
+        "decoders": [{ "port": 0, "type": "console" }]
+      }
     }
   ]
 }
